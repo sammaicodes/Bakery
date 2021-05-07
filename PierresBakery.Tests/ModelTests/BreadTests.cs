@@ -17,7 +17,7 @@ namespace Bakery.Test
     [TestMethod]
     public void Bread_ReceiveUserQuantity_QtyNumber()
     {
-      Bread breadConstructor = new Bread(2);
+      Bread breadConstructor = new Bread(3);
       Assert.AreEqual(typeof(Bread), breadConstructor.GetType());
     }
     [TestMethod]

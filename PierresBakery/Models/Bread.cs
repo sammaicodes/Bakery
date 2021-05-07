@@ -10,7 +10,7 @@ namespace Bakery.Models
     }
     public int GetBreadCost(int userQuantity)
     {
-      int calculate = (userQuantity/3);
+      int calculate = (userQuantity/3)*5;
       int totalWithDicountApplied = (actualValue - calculate);
       return totalWithDicountApplied;
       // int totalWithDicountApplied = actualValue - (actualValue*(.333));
