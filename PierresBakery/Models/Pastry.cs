@@ -1,5 +1,3 @@
-using System;
-
 
 namespace Bakery.Models
 {
@@ -13,7 +11,7 @@ namespace Bakery.Models
     public int GetPastryCost(int userQuantity)
     {
       int totalWithDicountApplied = (userQuantity*2) - discountDolarValue;
-     return totalWithDicountApplied;
+      return totalWithDicountApplied;
     }
   }
 }
