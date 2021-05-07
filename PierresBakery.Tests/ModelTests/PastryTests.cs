@@ -8,12 +8,18 @@ namespace Bakery.Test
   public class PastryTests
   {
     [TestMethod]
-    public void Pastry_ReceiveUserQuantity_QtyNumber()
+    public void Pastry_CreatesConstructor_QtyNumber()
     {
-      Bread breadConstructor = new Bread(3);
-      Assert.AreEqual(typeof(Bread), breadConstructor.GetType());
+      Pastry breadConstructor = new Pastry(7);
+      Assert.AreEqual(typeof(Pastry), breadConstructor.GetType());
     }
-   
+    [TestMethod]
+    public void GetPastryCost_ReturnTotalCost_TotalCost()
+    {
+      Pastry pastryConstructor = new Pastry(7);
+      int totalForPastries = 11;
+      Assert.AreEqual(pastryConstructor.GetPastryCost(7), totalForPastries);
+    }
   }
 }
 
