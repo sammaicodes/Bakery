@@ -23,9 +23,9 @@ namespace Bakery.Test
     [TestMethod]
     public void GetBreadCost_ReceiveUserTotal_Total()
     {
-      float num = 10.05;
+      int num = 10;
       Bread breadConstructor = new Bread(3);
-      Assert.AreEqual(breadConstructor.GetBreadCost(), num);
+      Assert.AreEqual(breadConstructor.GetBreadCost(3), num);
     }
   }
 }
