@@ -3,15 +3,14 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public int value {get; }
-    public Bread(int valuePerloaf)
+    public int actualValue {get; }
+    public Bread(int userQuantity)
     {
-      value = valuePerloaf;
+      actualValue = userQuantity*5;
     }
-    public int GetBreadCost(int quantity)
+    public static int GetBreadCost(int quantity)
     {
       
-
       return 3;
     }
   }

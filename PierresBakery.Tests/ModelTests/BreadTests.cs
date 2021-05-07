@@ -8,11 +8,20 @@ namespace Bakery.Test
   public class BreadTests
   {
     [TestMethod]
-    public void CalculateBreadCost_ReceiveUserInput_Number()
+    public void GetBreadCost_ReceiveUserInput_Number()
     {
-      int userQuantity = Bread.CalculateBreadCost(3);
+      int userQuantity = Bread.GetBreadCost(3);
       int numberTest = 3;
       Assert.AreEqual(userQuantity, numberTest);
     }
+    [TestMethod]
+    public void Bread_ReceiveUserQuantity_QtyNumber()
+    {
+      Bread breadConstructor = new Bread(2);
+      Assert.AreEqual(typeof(Bread), breadConstructor.GetType());
+    }
   }
 }
+//discount is (1/3)
+//so actualTotal - actualTotal*(1/3) = totalWithDicountApplied
+
