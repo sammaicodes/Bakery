@@ -11,7 +11,7 @@ namespace Bakery.Test
     public void CalculateBreadCost_ReceiveUserInput_Number()
     {
       int userQuantity = Bread.CalculateBreadCost(3);
-      int numberTest = 2;
+      int numberTest = 3;
       Assert.AreEqual(userQuantity, numberTest);
     }
   }
