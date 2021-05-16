@@ -19,6 +19,13 @@ namespace Bakery.Test
       int totalForPastries = 12;
       Assert.AreEqual(pastryConstructor.GetPastryCost(7), totalForPastries);
     }
+    [TestMethod]
+    public void GetPastryTotalWithoutDiscount_ReturnTotalCost_TotalCost()
+    {
+      Pastry pastryConstructor = new Pastry(1);
+      int totalForPastries = 23;
+      Assert.AreEqual(pastryConstructor.GetPastryCost(1), totalForPastries);
+    }
   }
 }
 
