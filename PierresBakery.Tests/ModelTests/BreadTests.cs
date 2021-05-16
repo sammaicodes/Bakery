@@ -24,7 +24,7 @@ namespace Bakery.Test
     {
       int num = 10;
       Bread breadConstructor = new Bread(2);
-      Assert.AreEqual(breadConstructor.GetBreadCost(3), num);
+      Assert.AreEqual(breadConstructor.GetBreadCost(2), num);
     }
   }
 }
