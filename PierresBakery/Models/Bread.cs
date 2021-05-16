@@ -3,15 +3,17 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public int actualBreadValue {get; }
+    public int ActualBreadValue {get; }
+    public int BreadPrice {get; }
     public Bread(int userQuantity)
     {
-      actualBreadValue = userQuantity*5;
+      BreadPrice = 5;
+      ActualBreadValue = userQuantity*BreadPrice;
     }
     public int GetBreadCost(int userQuantity)
     {
-      int calculate = (userQuantity/3)*5;
-      int totalWithDicountApplied = (actualBreadValue - calculate);
+      int calculate = (userQuantity/3)*BreadPrice;
+      int totalWithDicountApplied = (ActualBreadValue - calculate);
       return totalWithDicountApplied;
     }
   }

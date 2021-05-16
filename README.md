@@ -14,7 +14,7 @@
 
 ## Description
 
-_In brief, this project shows the utilization of basic object manipulation, and get-set with C# _
+_In brief, this project shows the utilization of basic object manipulation, and get-set with C#_
 
 ## Pre-requisites
 

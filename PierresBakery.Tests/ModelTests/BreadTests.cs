@@ -19,6 +19,13 @@ namespace Bakery.Test
       Bread breadConstructor = new Bread(3);
       Assert.AreEqual(breadConstructor.GetBreadCost(3), num);
     }
+    [TestMethod]
+    public void GetBreadCostWithNoDiscount_ReceiveUserTotal_Total()
+    {
+      int num = 10;
+      Bread breadConstructor = new Bread(2);
+      Assert.AreEqual(breadConstructor.GetBreadCost(3), num);
+    }
   }
 }
 
