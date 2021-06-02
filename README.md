@@ -14,7 +14,7 @@
 
 ## Description
 
-_In brief, this project shows the utilization of basic object manipulation, and get-set with C#_
+_In brief, this project shows the utilization of basic object manipulation with MSTest. This console application allows the user to chose the number of parties and bread loaves; and in return they should receive a total price with discounts applied._
 
 ## Pre-requisites
 
